@@ -1,3 +1,5 @@
+import { ColumnCustom } from './columnCustom'
+
 export const BackgroundContainer = ({ children }) => {
-  return <div className="background-container">{children}</div>
+  return <ColumnCustom className={'background-container'}>{children}</ColumnCustom>
 }

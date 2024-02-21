@@ -4,6 +4,7 @@ export const convertFormat = async () => {
   const textResponse = await response.text()
   const parsedData = papa.parse(textResponse)
   const arrayOfAll = parsedData.data
+  console.log(arrayOfAll[0])
 
   const isPublic = () => {
     const result = arrayOfAll.filter(x => {
